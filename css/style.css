@@ -1,0 +1,73 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+html{
+    font-family:Tahoma, Geneva, sans-serif;
+}
+/*响应式网格视图*/
+[class*="col-"]{
+    float:left;
+    padding:15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+@media only screen and (max-width:400px){
+    [class*="col-"]{
+        width:100%;
+    }
+}
+/*header设置*/
+.header-wrapper{
+    background-color:#3b4348;
+    width:100%;
+    height:auto;
+}
+header{
+    display:block;
+    padding:19px 0;
+    position: relative;
+    min-height:60px;
+    height:auto;
+    width:1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-nav{
+    position:absolute;
+    top:5px;
+    right:0;
+}
+.main-nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#3b4348;
+}
+.main-nav ul li{
+    float:left;
+    line-height: 22px;
+}
+.main-nav ul li a{
+    display:block;
+    color:white;
+    font-size:15px;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+.main-nav ul li a:hover:not(.active){
+    background-color:#111;
+}
